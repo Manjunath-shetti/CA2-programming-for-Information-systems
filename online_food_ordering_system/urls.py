@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$', include('pages.urls')),
     url(r'^pages/', include('pages.urls')),
-    
+    url(r'^restaurant/', include('restaurant.urls')),
+
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
