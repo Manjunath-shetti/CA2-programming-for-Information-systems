@@ -31,7 +31,8 @@ def lists(request):
         "restaurantlist": restaurantlist
     }
 
-    # Message according medicines Role #
+
+# Restaurant details
     context['heading'] = "Restaurant Details";
     return render(request, 'restaurant-list.html', context)
 
@@ -61,10 +62,14 @@ def update(request, restaurantId):
                    UPDATE restaurant
                    SET restaurant_name=%s, restaurant_description=%s WHERE restaurant_id = %s
                 """, (
+
+
             request.POST['restaurant_name'],
             request.POST['restaurant_description'],
             restaurantId
         ))
+
+
         context["restaurantDetails"] =  getData(restaurantId)
         messages.add_message(request, messages.INFO, "Restaurant updated succesfully !!!")
         return redirect('restaurant-listing')
@@ -91,6 +96,7 @@ def add(request):
 def delete(request, id):
     cursor = connection.cursor()
     sql = 'DELETE FROM restaurant WHERE restaurant_id=' + id
+    
     cursor.execute(sql)
     messages.add_message(request, messages.INFO, "Restaurant Deleted succesfully !!!")
     return redirect('restaurant-listing')
