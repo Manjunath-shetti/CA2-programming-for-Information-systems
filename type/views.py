@@ -25,7 +25,7 @@ def listing(request):
 
 def lists(request):
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM type")
+    cursor.execute("SELECsT * FROM type")
     typelist = dictfetchall(cursor)
 
     context = {
