@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^pages/', include('pages.urls')),
     url(r'^restaurant/', include('restaurant.urls')),
     url(r'^type/', include('type.urls')),
+    url(r'^users/', include('users.urls')),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
