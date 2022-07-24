@@ -1,5 +1,3 @@
-# CA2-programming-for-Information-systems
-CA-2
 Steps to run our project
 
 .Python must be installed.
@@ -63,3 +61,10 @@ https://github.com/Manjunath-shetti/CA2-programming-for-Information-systems.git
 I Imroj Khan student number 10512040 confirm that I have correctly attributed all sources and learning resources
 used in the preparation of the project, and understand that if I have not done so, I will receive a zero grade.
 I confirm that any unattributed code for which I am responsible is entirely my own work.
+
+
+
+
+
+
+
